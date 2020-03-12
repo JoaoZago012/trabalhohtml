@@ -11,22 +11,21 @@
     <a href="index.html">Home</a> <a href="sobre.html">Sobre</a> <a href="contato.html">Contato</a>
         <br>
     <h3>Fale Comigo</h3>
-<p>
-    <table>
- <tr>
-   <td>Nome:</td>
-   <td><input type="text" name="nome" size="40"> <br /></td>
- </tr>
- <tr>
-   <td>E-mail:</td>
-   <td><input type="text" name="E-mail" size="40"> <br /></td>
- </tr>
-</table>
- <div>
+<form action="/contato-html" method="post">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" />
+    </div>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" />
+    </div>
+    <div>
         <label for="msg">Mensagem:</label>
         <textarea id="msg"></textarea>
     </div>
-    <div class="button">
+       <div class="button">
         <button type="submit">Enviar sua mensagem</button>
-    </div>    
+    </div>
+</form>
 </html>
